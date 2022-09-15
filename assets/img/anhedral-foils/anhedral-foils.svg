@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="anhedral-foils.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 180 130"
+   height="130mm"
+   width="180mm">
+  <defs
+     id="defs2">
+    <rect
+       id="rect73"
+       height="24.568452"
+       width="121.51935"
+       y="121.51935"
+       x="120.00744" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-maximized="0"
+     inkscape:window-y="0"
+     inkscape:window-x="96"
+     inkscape:window-height="1030"
+     inkscape:window-width="1740"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="226.40199"
+     inkscape:cx="319.50463"
+     inkscape:zoom="1.979899"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Ebene 1">
+    <text
+       id="frontView:headline"
+       y="8"
+       x="45"
+       style="font-size:6px;font-family:sans-serif"
+       xml:space="preserve">Front view</text>
+    <path
+       id="frontView:foilHorizontalVertical"
+       d="M 60,10 V 75 L 10,87.5 M 60,75 110,87.5"
+       style="fill:none;stroke:#000000;stroke-width:0.5px" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.15px"
+       d="m 85,75 h -50"
+       id="frontView:angleReferenceLine" />
+    <path
+       sodipodi:nodetypes="cc"
+       style="fill:none;stroke:#000000;stroke-width:0.15px"
+       d="m 40,75 c -0.102076,1.740016 0.09684,3.417324 0.75,5"
+       id="angleLeft" />
+    <text
+       xml:space="preserve"
+       style="font-size:5px;font-family:sans-serif"
+       x="35"
+       y="79"
+       id="alphaLeftText">ɣ</text>
+    <path
+       sodipodi:nodetypes="cc"
+       style="fill:none;stroke:#000000;stroke-width:0.15px"
+       d="m 80,75 c 0.14123,2.5609 -0.2778,3.84121 -0.75,5"
+       id="angleRight" />
+    <text
+       id="alphaRightText"
+       x="82"
+       y="79"
+       style="font-size:5px;font-family:sans-serif">​ɣ</text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.15px"
+       d="m 69,39 -9,1"
+       id="verticalFoilPointerFrontView" />
+    <text
+       xml:space="preserve"
+       style="font-size:5px;font-family:sans-serif"
+       x="70"
+       y="40"
+       id="verticalFoilFrontView">vertical foil</text>
+    <path
+       id="horizontalFoilPointerFrontView"
+       d="m 50,85 -5,-6.5"
+       style="fill:none;stroke:#000000;stroke-width:0.15px;" />
+    <text
+       xml:space="preserve"
+       style="font-size:5px;font-family:sans-serif"
+       x="40"
+       y="90"
+       id="text22">&quot;horizontal&quot; foil</text>
+
+
+    <text
+       xml:space="preserve"
+       style="font-size:6px;font-family:sans-serif"
+       x="115"
+       y="8"
+       id="sideViewHeadline">Side view</text>
+    <path
+       id="sideViewVertical"
+       d="m 130,75 6,0 -2, -2 -3,-63 v 0 h -8 z"
+       style="fill:none;stroke:#000000;stroke-width:0.25px;" />
+    <path
+       id="sideViewHorizontal"
+       d="m 132,75 6,0 -1.5,12.5 -3,0 z"
+       style="fill:none;stroke:#000000;stroke-width:0.25px;" />
+    <text
+       id="sideViewVerticalText"
+       y="40"
+       x="140"
+       style="font-size:5px;font-family:sans-serif"
+       xml:space="preserve">vertical foil</text>
+    <path
+       id="topViewVerticalPointer"
+       d="m 139,39 -9,2"
+       style="fill:none;stroke:#000000;stroke-width:0.15px" />
+    <text
+       id="sideViewHorizontalText"
+       y="65"
+       x="140"
+       style="font-size:5px;font-family:sans-serif"
+       xml:space="preserve">&quot;horizontal&quot; foil</text>
+     <path
+       style="fill:none;stroke:#000000;stroke-width:0.15px"
+       d="m 139,65 -4,14"
+       id="topViewHorizontalPointer" />
+	   
+    <text
+       id="text25-9-1"
+       y="107.99723"
+       x="44.584206"
+       style="font-size:6px;font-family:sans-serif"
+       xml:space="preserve">Top view</text>
+    <path
+       id="topViewHorizontal"
+       d="m 10,125 50,-1.5 50.177602,1.5 v 3 l -50,1.5 -50,-1.5 z"
+       style="fill:none;stroke:#000000;stroke-width:0.25px;" />
+    <path
+       id="topViewVertical"
+       d="m 60,115.5 v 11 0"
+       style="fill:none;stroke:#000000;stroke-width:0.5px;" />
+    <text
+       id="topViewVerticalText"
+       y="119"
+       x="70"
+       style="font-size:5px;font-family:sans-serif"
+       xml:space="preserve">vertical foil</text>
+    <path
+       id="topViewVerticalPointer"
+       d="m 69,118 -9,2"
+       style="fill:none;stroke:#000000;stroke-width:0.15px" />
+    <text
+       id="topViewHorizontalText"
+       y="119"
+       x="15"
+       style="font-size:5px;font-family:sans-serif"
+       xml:space="preserve">&quot;horizontal&quot; foil</text>
+     <path
+       style="fill:none;stroke:#000000;stroke-width:0.15px"
+       d="m 30,120 3,6"
+       id="topViewHorizontalPointer" />
+ </g>
+</svg>

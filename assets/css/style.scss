@@ -1,0 +1,34 @@
+---
+---
+$header-bg-color: white;
+@import "{{ site.theme }}";
+.page-header {
+  background-image: url("../img/header.png");
+  background-position: center;
+  background-size: cover;
+
+  @include large {
+    padding: 2rem 3rem;
+  }
+
+  @include medium {
+    padding: 1rem 1rem;
+  }
+
+  @include small {
+    padding: 0.5rem 0.5rem;
+  }
+}
+
+header a {
+  color: white;
+}
+
+header a:hover {
+  text-decoration: none;
+}
+
+.project-tagline {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
