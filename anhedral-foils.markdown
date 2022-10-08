@@ -1,8 +1,6 @@
 ---
 layout: default 
 ---
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 # Anhedral Foils
 ## Introduction
 Anhedral foils are foils where the "horizontal" part of the foils are not strictly horizontal, but also slant downwards, in the simplest case with a constant anhedral angle $$\gamma$$.

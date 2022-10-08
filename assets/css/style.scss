@@ -32,3 +32,29 @@ header a:hover {
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
 }
+
+label.short {
+  display: inline-block;
+  width: 5rem;
+}
+
+div.canvas {
+  margin-left: 2 rem; 
+  margin-right: 5rem;
+}
+
+input {
+  margin: 5px;
+}
+
+button.shortlabel {
+  color: #fff;
+  background-color: #6c757d;
+  display: inline-block;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  margin-top:10px;
+  margin-left:10rem;
+}

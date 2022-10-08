@@ -1,8 +1,7 @@
 ---
 layout: default 
 ---
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 # Windward heel
 ## Introduction
 Especially on an upwind course, moth sailors typically aim to achieve a windward heel. In contrast, in most other sailing boats the aim is to sail upright (without heel). The reason for the latter is that the hull resistance of a sailing boat is lowest in typical cases when the boat is sailed upright (there are some exceptions, e.g. a skiff hull in very light wind can have less resistance when being heeled). For a flying moth, the hull does not touch the water, therefore it has no water resistance and the main reason for sailing upright disappears. In such a scenario, other reasons for sailing heeled are important because they are not "shadowed" by the increase in drag for a heeled hull in water.
@@ -21,9 +20,9 @@ The main reason for not sailing heeled is that heeling reduces the effective sai
   <img src="{{site.url}}/assets/img/windward-heel/windward-heel.svg" alt="forces on a heeled moth"/>
   <figcaption>Figure 1: Forces on a moth heeled by an angle &lambda;</figcaption>
 </figure>
-The forces on a moth heeled windward by an angle $$\lambda$$ can be seen in Figure 1. We are interested only in force components perpendicular to the motion of the boat, so all drag and driving force components are omitted. The forces are:
-- the lift of the horizontal foil $$F_{f,h}$$. This needs to be calculated.
-- the lateral force of the vertical foil $$F_{f,v}$$. This needs to be calculated. 
+The forces on a moth heeled windward by an angle $$\lambda$$ can be seen in Figure 1. We are interested only in force components perpendicular to the motion of the boat, so all drag and driving force components are omitted. Also we are not interested in how the forces are distributed between front and rear foil, we consider the sum of the forces of both foils here. The forces are:
+- the lift of the horizontal foils $$F_{f,h}$$. This needs to be calculated.
+- the lateral force of the vertical foils $$F_{f,v}$$. This needs to be calculated. 
 - the weight force of the helm $$F_{w,h}$$. This is assumed to be known. 
 - the weight force of the boat $$F_{w,b}$$. This is assumed to be known. We assume that the boat weight is on the symmetry plane of the boat.
 - the transversal force of the sail $$F_s$$. This needs to be calculated. We assume that the sail force compoent which is perpendicular to the symmetry plane of the boat has an angle $$\lambda$$ to the horizontal plane.
@@ -67,38 +66,44 @@ So the maximum possible sail force can be increased by
 
 where the last two bracketed strategies have obvious disadvantages in other areas, and the third last point is probably very difficult to achieve without disadvantages in other areas.
 
-For a modern decksweeper moth and an average sailor we have:  
-$$h_{coe,s}$$: 3,6m  
-$$h_{cog,h}$$: 1,5 m  
-$$h_{cog,b}$$: 1,3 m (estimated)  
-$$w_{cog,h}$$: 1,3 m (COG of helm approx 20 cm outside of wing)  
-$$F_{w,h}$$: 800 N (approx 80 kg weight)  
-$$F_{w,b}$$: 400 N (approx 40 kg weight)
+For a typical moth and sailor we have:  
+
+<label for="F_w_h" class="short">\\(F_{w,h}\\): </label><input id="F_w_h" value="800" onchange="recalculate();"/>N<br/>
+<label for="F_w_b" class="short">\\(F_{w,b}\\): </label><input id="F_w_b" value="400" onchange="recalculate();"/>N<br/>
+<label for="w_cog_h" class="short">\\(h_{cog,h}\\): </label><input id="w_cog_h" value="1.3" onchange="recalculate();"/>m<br/>
+<label for="h_coe_s" class="short">\\(h_{coe,s}\\): </label><input id="h_coe_s" value="3.6" onchange="recalculate();"/>m<br/>
+<label for="h_cog_b" class="short">\\(h_{cog,b}\\): </label><input id="h_cog_b" value="1.3" onchange="recalculate();"/>m<br/>
+<label for="h_cog_h" class="short">\\(h_{cog,h}\\): </label><input id="h_cog_h" value="1.5" onchange="recalculate();"/>m<br/>
+<button class="shortlabel" onclick="resetValues();">reset values</button><br/>
 
 which results in the following transversal sail force:
-<figure>
-  <img src="{{site.url}}/assets/img/windward-heel/sail-force-vs-heel-angle.png" alt="sail force vs heel angle"/>
-  <figcaption>Figure 2: transversal sail force vs windward heel angle</figcaption>
-</figure>
 
-This shows that the maximum possible transversal sail force can be considerably increased by heeling the moth to windward, and that it is not a good idea to heel the moth to leeward because of the reduced transversal sail force one can counterbalance.
+<div class="canvas">
+  <figure>
+    <canvas id="sailForceVsWindwardHeelAngleCanvas" width="200" height="150"></canvas>
+    <figcaption>Figure 2: transversal sail force vs windward heel angle</figcaption>
+  </figure>
+</div>
 
+This shows that the maximum possible transversal sail force can be considerably increased by heeling the moth to windward.
 
-
-To determine the forces $$F_{f,h}$$ and $$F_{f,v}$$ on the horizontal and vertical foils, respectively,  
+To determine the forces $$F_{f,h}$$ and $$F_{f,v}$$ on the horizontal and vertical foils, respectively,
 we use the fact that the net force on the boat must be zero to have a force equilibrium. The forces $$F_{f,v}$$ and $$F_{f,h}$$ are easily calculated in the coordinate system of the boat. 
 
 In the direction perpendicular to the horizontal foils, the net force is zero when the following equation is satisfied:
 
-$$F_{f,h} = cos(\lambda) \left[ F_{w,s} + F_{w,b} \right]$$
+$$F_{f,h} = cos(\lambda) \left[ F_{w,h} + F_{w,b} \right]$$
 
 So the lift needed from the horizontal foils decreases as $$\lambda$$ increases, as part of the weight is carried by the sails. However, the effect only becomes significant for larger $$\lambda$$: For $$\lambda=10°$$, the lift decreases by 1,5%, for $$\lambda=20°$$, the lift decreases by 6%, and for 
 $$\lambda=30°$$, the lift decreases by 13%. The above geometry and weights gives the following horizontal foil force versus windward heel angle:
 
-<figure>
-  <img src="{{site.url}}/assets/img/windward-heel/horizontal-foil-force-vs-heel-angle.png" alt="sail force vs heel angle"/>
-  <figcaption>Figure 3: horizontal foil force vs windward heel angle</figcaption>
-</figure>
+<div class="canvas">
+  <figure>
+    <canvas id="horizontalFoilForceVsWindwardHeelAngleCanvas" width="200" height="150"></canvas>
+    <figcaption>Figure 3: horizontal foil force vs windward heel angle</figcaption>
+  </figure>
+</div>
+
 
 
 In the direction perpendicular to the vertical foils we have:
@@ -109,9 +114,12 @@ So for non-zero positive $$\lambda$$, part of the sail force is compensated by t
 
 However, for the geometry and weights above, the forces on the vertical foil are zero at around 20 degrees windward heel angle and are negative afterwards, as the vertical foil now carries part of the weight of the boat and helm: 
 
-<figure>
-  <img src="{{site.url}}/assets/img/windward-heel/vertical-foil-force-vs-heel-angle.png" alt="sail force vs heel angle"/>
-  <figcaption>Figure 3: horizontal foil force vs windward heel angle</figcaption>
-</figure>
+<div class="canvas">
+  <figure>
+    <canvas id="verticalFoilForceVsWindwardHeelAngleCanvas" width="200" height="150"></canvas>
+    <figcaption>Figure 3: vertical foil force vs windward heel angle</figcaption>
+  </figure>
+</div>
+<script src="assets/js/windwardHeel.js"></script>
 
 A negative $$F_{f,v}$$ means that the vertical foil needs to produce a leeward force, and this is only possible if the boat moves to windward. This means that heeling to windward can completely erase leeway and even lead to a negative leeway, i.e. the boat moves to windward instead of moving to leeward. 
