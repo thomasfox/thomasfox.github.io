@@ -6,6 +6,7 @@ This site contains calculations useful for understanding [International Moth Din
 ### Calculations
 * [windward heel](./windward-heel.html)
 * [anhedral foils](./anhedral-foils.html)
+* [nomenclature](./nomenclature.html)
 
 ### Other
 * [links](./links.html)
