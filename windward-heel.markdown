@@ -70,7 +70,7 @@ For a typical moth and sailor we have:
 
 <label for="F_w_h" class="short">\\(F_{w,h}\\): </label><input id="F_w_h" value="800" onchange="recalculate();"/>N<br/>
 <label for="F_w_b" class="short">\\(F_{w,b}\\): </label><input id="F_w_b" value="400" onchange="recalculate();"/>N<br/>
-<label for="w_cog_h" class="short">\\(h_{cog,h}\\): </label><input id="w_cog_h" value="1.3" onchange="recalculate();"/>m<br/>
+<label for="w_cog_h" class="short">\\(w_{cog,h}\\): </label><input id="w_cog_h" value="1.3" onchange="recalculate();"/>m<br/>
 <label for="h_coe_s" class="short">\\(h_{coe,s}\\): </label><input id="h_coe_s" value="3.6" onchange="recalculate();"/>m<br/>
 <label for="h_cog_b" class="short">\\(h_{cog,b}\\): </label><input id="h_cog_b" value="1.3" onchange="recalculate();"/>m<br/>
 <label for="h_cog_h" class="short">\\(h_{cog,h}\\): </label><input id="h_cog_h" value="1.5" onchange="recalculate();"/>m<br/>
