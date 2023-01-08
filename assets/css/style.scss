@@ -38,6 +38,12 @@ label.short {
   width: 5rem;
 }
 
+label.long {
+  display: inline-block;
+  width: 15rem;
+}
+
+
 div.canvas {
   margin-left: 2 rem; 
   margin-right: 5rem;
@@ -45,6 +51,21 @@ div.canvas {
 
 input {
   margin: 5px;
+}
+
+div.column {
+  width:50%;
+  float:left;
+}
+
+div.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+figure.smallmargin {
+   margin: 0px 10px 0px 10px
 }
 
 button.shortlabel {
